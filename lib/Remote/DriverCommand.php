@@ -22,6 +22,7 @@ namespace Facebook\WebDriver\Remote;
  */
 class DriverCommand
 {
+	const EXEC_PHANTOM = 'executePhantomScript';
     const GET_ALL_SESSIONS = 'getAllSessions';
     const GET_CAPABILITIES = 'getCapabilities';
     const NEW_SESSION = 'newSession';

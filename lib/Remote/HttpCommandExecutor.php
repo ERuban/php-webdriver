@@ -35,6 +35,7 @@ class HttpCommandExecutor implements WebDriverCommandExecutor
      * @see https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#command-reference
      */
     protected static $commands = [
+	    DriverCommand::EXEC_PHANTOM => ['method' => 'POST', 'url' => '/session/:sessionId/phantom/execute'],
         DriverCommand::ACCEPT_ALERT => ['method' => 'POST', 'url' => '/session/:sessionId/accept_alert'],
         DriverCommand::ADD_COOKIE => ['method' => 'POST', 'url' => '/session/:sessionId/cookie'],
         DriverCommand::CLEAR_ELEMENT => ['method' => 'POST', 'url' => '/session/:sessionId/element/:id/clear'],
